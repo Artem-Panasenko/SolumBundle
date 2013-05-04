@@ -77,7 +77,7 @@ class GenerateTranslationJSONCommand extends ContainerAwareCommand
           $json = json_encode($param_by_lang);
 
           // Add some of the necessary solum pieces
-          $json = "solum.addDictionary(\n  JSON.parse('" . $json . "')\n);";
+          $json = "solum.addDictionary(\n  " . $json . "\n);";
 
           if(file_put_contents($JSONfilePath, $json)) {
               $output->writeln("<comment>></comment> <info>The file was written successfully!</info>\n");
