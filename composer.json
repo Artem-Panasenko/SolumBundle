@@ -6,7 +6,7 @@
     "homepage": "http://github.com/beum/SolumBundle",
     "require": {
         "php": ">=5.3.3",
-        "symfony/security": ">=2.1-dev,<2.3-dev"
+        "symfony/security": "~2.3"
     },
     "minimum-stability": "dev",
     "autoload": {
